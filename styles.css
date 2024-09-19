@@ -1,0 +1,221 @@
+:root {
+  --Cyan: hsl(179, 62%, 43%);
+  --Bright-Yellow: hsl(71, 73%, 54%);
+
+  --Light-Gray: hsl(204, 43%, 93%);
+  --Grayish-Blue: hsl(218, 22%, 67%);
+}
+
+@font-face {
+    font-family: 'Karla';
+    src: url('./assets/fonts/static/Karla-Regular.ttf') format('truetype');
+    font-weight: 400;
+  }
+  
+  @font-face {
+    font-family: 'Karla';
+    src: url('./assets/fonts/static/Karla-Bold.ttf') format('truetype');
+    font-weight: 700;
+  }
+
+html {
+    font-size: 62.5%;
+    font-family: 'Karla';
+}
+body {
+    font-size: 1.6rem;
+    background-color: var(--Light-Gray);
+}
+.container {
+    width: 85%;
+    margin: 7rem  auto 0;
+}
+.header {
+    background-color: #ffffff;
+    padding: 2.5rem 2.5rem;
+    border-radius: .6rem;
+}
+.header h1 {
+    font-size: 2rem;
+    color: var(--Cyan);
+    font-weight: 700;
+    margin-bottom: 2.5rem;
+}
+.header span {
+    color: var(--Bright-Yellow);
+    font-size: 1.5rem;
+   
+}
+.header p {
+    margin-top: 2rem;
+    font-size: 1.4rem;
+    line-height: 1.8;
+    color: var(--Grayish-Blue);
+}
+.inf {
+    padding: 2.5rem 2.5rem;
+    background-color: var(--Cyan);
+    color: #ffffff;
+}
+.inf h2 {
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+
+.price-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+.price-container p {
+    font-size: 3rem;
+    margin-right: 1.3rem;
+    font-weight: 700;
+}
+.price-container span {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: hsl(179, 79%, 68%);
+}
+.desc {
+    font-size: 1.5rem;
+}
+button {
+    width: 100%;
+    margin-top: 3rem;
+    padding: 1.5rem;
+    font-size: 1.5rem;
+    letter-spacing: .1rem;
+    background-color: var(--Bright-Yellow);
+    color: #ffffff;
+    font-weight: 500;
+    border-radius: .6rem;
+    border: none;
+}
+.footer {
+    background-color: hsl(179, 44%, 52%);
+    padding: 2.5rem 2.5rem;
+    line-height: 1.4;
+    border-radius: 0 0 .6rem .6rem;
+}
+.footer h3 {
+    color: #ffffff;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+.footer li {
+    font-size: 1.4rem;
+    color:#ffffff;
+    opacity: .7;
+}
+@media (min-width: 768px) {
+    body {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+    }
+    .container {
+        width: 65rem;
+    }
+    .header h1 {
+        font-size: 2.5rem;
+    }
+    .header p {
+        font-size: 1.7rem;
+    }
+    .header span {
+        font-size: 2rem;
+    }
+    .inf-container {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .inf {
+        border-radius: 0 0 0 .6rem;
+        padding: 3.5rem 2.5rem;
+    }
+    .footer {
+        padding: 3.5rem 2.5rem;
+        line-height: 1.4;
+        border-radius:  0  0 .6rem 0;
+    }
+   
+}
+@media (max-width: 216px) {
+
+    .container {
+        width: 90%;
+        margin-top: 3.5rem;
+        margin-bottom: 3.5rem;
+    }
+    .header {
+        border-radius: .6rem .6rem 0 0 ;
+        padding: 1.5rem 1.5rem;
+    }
+     .header h1 {
+        margin-bottom: 1rem;
+        font-size: 1.4rem;
+    }
+    .header span {
+        font-size: 1.1rem;
+    }
+    
+    .header p {
+        font-size: .825rem;
+    }
+    
+    .inf {
+        padding: 2rem 1.5rem;
+    }
+    .inf h2 {
+        font-size: 1.3rem;
+        
+        margin-bottom: 1.5rem;
+     }
+    
+    .price-container {
+        margin-bottom: 1rem;
+    }
+    
+    .price-container p {
+        font-size: 2rem;
+        margin-right: .6rem;
+    }
+    
+    .price-container span {
+        font-size: 1rem;
+    } 
+    .desc {
+        font-size: .9rem;
+    }
+    button {
+        width: 100%;
+        margin-top: 2rem;
+       
+        font-size: 1.2rem;
+        letter-spacing: 0;
+      
+    }
+    
+    .footer {
+        padding: 1.5rem 2.5rem;
+       
+    } 
+    .footer h3 {
+        
+        font-size: 1.5rem;
+        
+        margin-bottom: 1rem;
+    }
+    .footer li {
+        font-size: .9rem;
+
+    }
+   
+}
+
+
+
